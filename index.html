@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-t/S">
+<head>
+    <meta charset="ut/-8">
+    <title>Preferences</title>
+    <link rel="stylesheet" href="stylesheet/style.css" />
+    <script src="javascripts/modernizr.js"></script>
+</head>
+<body>
+<div id="container">
+    <p><strong>Preferences</strong></p>
+    <form id="preferences" action="save_prefs" method="post" ассept-сharset="utf-8">
+        <fieldset id="colors" class="">
+            <legend>Colors</legend>
+            <ol>
+                <li>
+                    <label for="background_color">Background color</label>
+                    <input class="color" type="color" name="background_color" value="" id="background_color" />
+                </li>
+                <li>
+                    <label for="text_color">Text color</label>
+                    <input class=”color” type="color" name="text_color" id="text_color" value="" />
+                </li>
+                <li>
+                    <label for="text_size">Text size</label>
+                    <select name="text_size" id="text_size">
+                        <option value="16">16px</option>
+                        <option value="20">20px</option>
+                        <option value="24">24px</option>
+                        <option value="32">32px</option>
+                    </select>
+                </li>
+            </ol>
+        </fieldset>
+        <input type="submit" value="Save changes" />
+    </form>
+</div>
+<script src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="javascripts/storage.js"></script>
+</body>
